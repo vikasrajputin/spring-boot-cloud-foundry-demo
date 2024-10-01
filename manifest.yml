@@ -1,0 +1,10 @@
+applications:
+  - name: simple-rest             # The name of the app (must be unique)
+    memory: 768M                  # Memory allocation
+    disk_quota: 1G                # Disk space allocation
+    instances: 1                  # Number of instances to run
+    path: ./target/simple-rest-0.0.1-SNAPSHOT.jar         # Path to your app (e.g., JAR file for Java apps)
+    buildpacks:                    # Optional: Specify buildpack to use
+      - java_buildpack
+    routes:                        # Optional: Set custom routes
+      - route: my-todo-app-vikas.de.a9sapp.eu
