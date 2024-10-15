@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/"  # The directory where your pom.xml is located (usually root)
+    schedule:
+      interval: "daily"  # Options: daily, weekly, monthly
+      time: "13:30" # time in UTC
+    ignore:
+      - dependency-name: "org.springframework.boot:spring-boot-starter-test"  # Optionally, you can ignore specific dependencies
