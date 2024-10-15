@@ -5,5 +5,3 @@ updates:
     schedule:
       interval: "daily"  # Options: daily, weekly, monthly
       time: "13:30" # time in UTC
-    ignore:
-      - dependency-name: "org.springframework.boot:spring-boot-starter-test"  # Optionally, you can ignore specific dependencies
